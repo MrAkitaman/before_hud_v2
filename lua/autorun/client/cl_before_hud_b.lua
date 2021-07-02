@@ -11,7 +11,7 @@ local intOffsetY = 0
 local lerpHealth = 0
 local lerpHunger = 0
 local lerpArmor = 0
-local ourMat = Material( "materials/icons/logotrans2.png" )
+
 
 
 hook.Add("HUDPaint", "Before::HudNew", function()
@@ -66,9 +66,6 @@ hook.Add("HUDPaint", "Before::HudNew", function()
         draw.DrawText("Secondaire: "..AmmoSecond, "Trebuchet24", ScreenScale(600), ScreenScale(340), color_white, TEXT_ALIGN_CENTER, TEXT_ALIGN_CENTER)
     end
 
-    surface.SetDrawColor( 255, 255, 255, 255 ) -- Set the drawing color
-    surface.SetMaterial( ourMat ) -- Use our cached material
-    surface.DrawTexturedRect( RespX(10), RespY(880), RespX(128), RespY(128) ) -- Actually draw the rectangle
 
 end)
 
