@@ -2,8 +2,7 @@
 local function RespX(x) return x/1920*ScrW() end
 local function RespY(y) return y/1080*ScrH() end
 -- Vars
-local intMaxW = ScrW()
-local intMaxH = ScrH()
+
 
 local intOffsetY = 0
 
@@ -15,6 +14,9 @@ local lerpArmor = 0
 
 
 hook.Add("HUDPaint", "Before::HudNew", function()
+        
+    local intMaxW = ScrW()
+    local intMaxH = ScrH()
 
     local intBarW = 40
     local intBarH = 195
